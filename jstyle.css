@@ -1,0 +1,161 @@
+/* === CSS RESET === */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+  cursor: url('jimages/cursor.png'), auto; 
+}
+
+nav {
+	background-color:black;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav a:link {
+	flex-grow: 1;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+#s1d h1{
+	font-size: 52px;
+	text-transform: capitalize;
+	color: #df0000;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+	padding: 10px 20px 20px;
+	position: relative;
+	animation: pulse 3s infinite;
+}
+
+#s1d h2{
+	font-size: 35px;
+	text-transform: capitalize;
+	color: black;
+	padding: 10px 20px 20px;
+	position: relative;
+	text-align: center;
+}
+
+@keyframes pulse {
+  	0% {
+    color: #df0000;
+  }
+	25% {
+    color: #df0000;
+  }
+	50% {
+    color: #f2c300;
+  }
+	75% {
+    color: #0099f6;
+  }
+  	100% {
+    color: #df0000;
+  }
+}
+
+section{
+	width: 100%;
+	min-height: 100%;
+}
+
+#s1d {
+	background: url('jimages/teambg.jpg') no-repeat fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+
+
+#s2d {
+	background-color:#C02328;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: left;
+}
+
+#s2d div{
+	flex-wrap: wrap;
+	background-color: white;
+	padding: 20px;
+	margin:20px;
+	font-size: 30px;
+	border: solid 10px #22225F;
+}
+
+#conimg {
+	width: 1850px;
+	height: 820px;
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+ul {
+    display: inline-block;
+    height: 820px;
+    position: relative;
+    width: 850px;
+    padding-left: 30px;
+
+}
+li {
+    font: bold 16px/100px sans-serif;
+    height: 100px;
+}
+
+#conimg a {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+}
+
+#conimg a:hover {
+    color: black;
+}
+
+#conimg img {
+    display: none;
+    height: 800px;
+    position: absolute;
+    width: 850px;
+    bottom: 40px;
+    left: 350px;
+}
+
+#conimg a:hover + img, #conimg img:hover {
+    display: block;
+}

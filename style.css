@@ -1,0 +1,76 @@
+body,html {
+
+	height:100%;
+	margin: 0;
+	background-color: #000000;
+	cursor: url('images/cursor.png'), default;
+	cursor: url(images/cursor.png), auto;   
+
+}
+
+#popup{
+
+	position:absolute;
+	position:center;
+
+}
+
+#bgimg {
+
+	background-image: url('images/SJ_landing page_dsktp_background.jpg');
+    height: 100%;
+}
+
+#bgimg {
+
+	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.row {
+    display: flex;
+    position:absolute;
+    z-index: 1;
+
+}
+
+.column {
+    flex: 33%;
+    padding: 5px;
+}
+
+
+.column:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+    cursor: url('images/cursor.png'),pointer;
+}
+
+#footer{
+   position: fixed;
+   z-index: 2;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+
+}
+
+#share-buttons img { 	
+	filter: invert(100%);
+	width: 35px;
+	height:35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+	float:right;
+
+}
+
+
